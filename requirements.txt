@@ -3,7 +3,7 @@ kafka-python-ng
 requests
 
 # Analiza danych (Data Scientist / Spark)
-pyspark
+pyspark==3.5.3
 pandas
 scikit-learn
 

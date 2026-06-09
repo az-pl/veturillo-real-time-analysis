@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Program Files/**)",
+      "PowerShell(& \"C:\\\\Users\\\\ddabr\\\\Desktop\\\\SGH\\\\A_D_W_R\\\\Veturilo\\\\veturillo-real-time-analysis\\\\venv\\\\Scripts\\\\python.exe\" -c \"import pyspark; print\\(pyspark.__version__\\)\")",
+      "PowerShell([System.Environment]::GetEnvironmentVariable\\(\"JAVA_HOME\", \"User\"\\); [System.Environment]::GetEnvironmentVariable\\(\"HADOOP_HOME\", \"User\"\\))"
+    ]
+  }
+}
