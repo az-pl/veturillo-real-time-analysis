@@ -110,15 +110,15 @@ python alerts/alert_bot.py
 *Tip: Możesz ustawić zmienną środowiskową `DISCORD_WEBHOOK_URL` w systemie przed startem, aby bot wysyłał alerty graficzne prosto na Twój serwer Discord!*
 
 ### Terminal 4: Wizualizacja w Metabase
-1. Wejdź na `http://localhost:3000` w przeglądarce.
-2. Skonfiguruj konto admina (możesz pominąć kroki początkowe lub dodać bazę danych).
-3. Dodaj nową bazę danych typu **PostgreSQL**:
-   - **Host**: `postgres` (nazwa serwisu z sieci Docker!)
-   - **Port**: `5432`
-   - **Database name**: `veturilo_db`
-   - **Database username**: `veturilo_user`
-   - **Database password**: `veturilo_password`
-4. Ciesz się danymi analitycznymi w czasie rzeczywistym! Tabele `station_status` i `veturilo_alerts` będą regularnie odświeżane.
+Metabase tworzy dashboard na podstawie konfiguracji. Jeśli dashboard został już utworzony, to Metabase tylko sprawdza czy nie było zmian od ostatniej konfiguracji.
+```bash
+# Utworzenie dashboardu 
+python metabase/metabase_seed.py
+```
+W terminalu pojawia się link do dashboardu.
+
+*Uwaga: Przy pierwszym starcie może to zająć chwilę.*
+
 
 ---
 
